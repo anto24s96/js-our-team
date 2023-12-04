@@ -2,4 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+h3,
+h5 {
+   text-align: center;
+}
+
+h5{
+    font-style: italic;
 }

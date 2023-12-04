@@ -5,32 +5,32 @@ let employees = [
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
-        image: "wayne-barnett-founder-ceo.jpg",
+        image: '<img src="./img/wayne-barnett-founder-ceo.jpg">',
     },
     {
         name: "Angela Caroll",
         role: "Chief Editor",
-        image: "angela-caroll-chief-editor.jpg",
+        image: '<img src="./img/angela-caroll-chief-editor.jpg">',
     },
     {
         name: "Walter Gordon",
         role: "Office Manager",
-        image: "walter-gordon-office-manager.jpg",
+        image: '<img src="./img/walter-gordon-office-manager.jpg">',
     },
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
-        image: "angela-lopez-social-media-manager",
+        image: '<img src="./img/angela-lopez-social-media-manager.jpg">',
     },
     {
         name: "Scott Estrada",
         role: "Developer",
-        image: "scott-estrada-developer.jpg",
+        image: '<img src="./img/scott-estrada-developer.jpg">',
     },
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        image: "barbara-ramos-graphic-designer.jpg",
+        image: '<img src="./img/barbara-ramos-graphic-designer.jpg">',
     },
 ];
 
@@ -40,8 +40,10 @@ for(let i = 0; i < employees.length; i++){
 
     //STAMPO LE INFORMAZIONI PER RENDERLE VISIBILI NEL DOM
     let div = document.createElement("div");
-    div.innerHTML = `<h3>${employees[i].name}</h3> <h5>${employees[i].role}</h5> ${employees[i].image}`;
+
+    div.classList.add("card", "p-4", "m-4");
+
+
+    div.innerHTML = `${employees[i].image} <h3>${employees[i].name}</h3> <h5>${employees[i].role}</h5>`;
     our_team.appendChild(div);
-
-
 }
