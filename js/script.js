@@ -5,32 +5,32 @@ let employees = [
   {
     name: "Wayne Barnett",
     role: "Founder & CEO",
-    image: '<img src="./img/wayne-barnett-founder-ceo.jpg">',
+    image: "wayne-barnett-founder-ceo.jpg",
   },
   {
     name: "Angela Caroll",
     role: "Chief Editor",
-    image: '<img src="./img/angela-caroll-chief-editor.jpg">',
+    image: "angela-caroll-chief-editor.jpg",
   },
   {
     name: "Walter Gordon",
     role: "Office Manager",
-    image: '<img src="./img/walter-gordon-office-manager.jpg">',
+    image: "walter-gordon-office-manager.jpg",
   },
   {
     name: "Angela Lopez",
     role: "Social Media Manager",
-    image: '<img src="./img/angela-lopez-social-media-manager.jpg">',
+    image: "angela-lopez-social-media-manager.jpg",
   },
   {
     name: "Scott Estrada",
     role: "Developer",
-    image: '<img src="./img/scott-estrada-developer.jpg">',
+    image: "scott-estrada-developer.jpg",
   },
   {
     name: "Barbara Ramos",
     role: "Graphic Designer",
-    image: '<img src="./img/barbara-ramos-graphic-designer.jpg">',
+    image: "barbara-ramos-graphic-designer.jpg",
   },
 ];
 
@@ -43,6 +43,6 @@ for (let i = 0; i < employees.length; i++) {
 
   div.classList.add("card", "p-4", "m-4");
 
-  div.innerHTML = `${employees[i].image} <h3>${employees[i].name}</h3> <h5>${employees[i].role}</h5>`;
+  div.innerHTML = `<img src="./img/${employees[i].image}" alt="image"> <h3>${employees[i].name}</h3> <h5>${employees[i].role}</h5>`;
   our_team.appendChild(div);
 }
